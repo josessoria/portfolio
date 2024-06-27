@@ -1,0 +1,161 @@
+[
+  {
+    "label": "React",
+    "value": "react",
+    "category": "frontend"
+  },
+  {
+    "label": "Redux",
+    "value": "redux",
+    "category": "frontend"
+  },
+  {
+    "label": "TypeScript",
+    "value": "typescript",
+    "category": "frontend"
+  },
+  {
+    "label": "Tailwind CSS",
+    "value": "tailwindcss",
+    "category": "frontend"
+  },
+  {
+    "label": "HTML",
+    "value": "html",
+    "category": "frontend"
+  },
+  {
+    "label": "CSS",
+    "value": "css",
+    "category": "frontend"
+  },
+  {
+    "label": "SASS/SCSS",
+    "value": "sass",
+    "category": "frontend"
+  },
+  {
+    "label": "Vue",
+    "value": "vue",
+    "category": "frontend"
+  },
+  {
+    "label": "Angular",
+    "value": "angular",
+    "category": "frontend"
+  },
+
+  {
+    "label": "Node.js",
+    "value": "nodejs",
+    "category": "backend"
+  },
+  {
+    "label": "Figma",
+    "value": "figma",
+    "category": "design"
+  },
+
+  {
+    "label": "Express.js",
+    "value": "expressjs",
+    "category": "backend"
+  },
+
+  {
+    "label": "Nest.js",
+    "value": "nestjs",
+    "category": "backend"
+  },
+
+  {
+    "label": "PostgreSQL",
+    "value": "postgresql",
+    "category": "databases"
+  },
+  {
+    "label": "MongoDB",
+    "value": "mongodb",
+    "category": "databases"
+  },
+  {
+    "label": "Firebase",
+    "value": "firebase",
+    "category": "databases"
+  },
+
+  {
+    "label": "Adobe Photoshop",
+    "value": "adobephotoshop",
+    "category": "design"
+  },
+  {
+    "label": "Adobe Illustrator",
+    "value": "adobeillustrator",
+    "category": "design"
+  },
+  {
+    "label": "Mentorship",
+    "value": "mentorship",
+    "category": "other"
+  },
+  {
+    "label": "Leadership",
+    "value": "leadership",
+    "category": "other"
+  },
+  {
+    "label": "Git",
+    "value": "git",
+    "category": "other"
+  },
+  {
+    "label": "Scrum",
+    "value": "scrum",
+    "category": "other"
+  },
+
+  {
+    "label": "AWS",
+    "value": "aws",
+    "category": "devops"
+  },
+
+  {
+    "label": "Trello",
+    "value": "trello",
+    "category": "other"
+  },
+  {
+    "label": "Notion",
+    "value": "notion",
+    "category": "other"
+  },
+  {
+    "label": "Ant.Design",
+    "value": "ant",
+    "category": "design"
+  },
+
+  {
+    "label": "JavaScript",
+    "value": "javascript",
+    "category": "frontend"
+  },
+
+  {
+    "label": "Next.js",
+    "value": "nextjs",
+    "category": "frontend"
+  },
+  {
+    "label": "Prisma",
+    "value": "prisma",
+    "category": "databases"
+  },
+  {
+    "label": "Bootstrap",
+    "value": "bootstrap",
+    "category": "frontend"
+  }
+]

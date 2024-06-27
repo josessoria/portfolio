@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box
+  ;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.text {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  opacity: 1;
+  margin-bottom: calc(var(--space) / 2);
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.secondary-text {
+  font-weight: 200;
+  text-transform: lowercase;
+  font-size: 0.8rem;
+}
+
+.section-title {
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: var(--space);
+}
+
+.highlighted {
+  font-weight: 500;
+  opacity: 1;
+}
+
+.label {
+  @extend .highlighted;
+  margin-bottom: calc(var(--space) / 2);
+}
+
+.skill-item {
+  padding: 0 calc(var(--space) / 2);
+  border-radius: var(--space);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: calc(var(--space) / 4);
+  margin-bottom: calc(var(--space) / 4);
+  opacity: 0.8;
+  line-height: 1.5;
+  font-size: 0.7rem;
+  transition: 0.4s;
+  white-space: nowrap;
+
+  &.highlighted {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+  }
+
+  &.is-text {
+    margin-right: 0;
+  }
+}
+

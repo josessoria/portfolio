@@ -1,0 +1,75 @@
+[
+    {
+      "position": "Project Leader / Director of Systems",
+      "name": "Dream Junk Studio",
+      "url": "https://dreamjunkstudios.com/",
+      "startDate": "Oct 2023",
+      "description": "I led the execution of seven projects with %%scrum%% methodologies, coordinating teams and contributing to development with %%nextjs%% and %%react%% on the frontend, and %%expressjs%%, %%postgresql%% on the backend. Additionally, I guided in the use of %%aws%%. I reviewed and contributed design ideas with %%figma%% for an exceptional user experience.",
+      "skills": [
+          "techinterview",
+          "javascript",
+          "typescript",
+          "nodejs",
+          "nestjs"
+      ]
+  },
+  {
+    "position": "Fullstack Developer",
+    "name": "Dream Junk Studio",
+    "url": "https://dreamjunkstudios.com/",
+    "startDate": "Sep 2022",
+    "endDate": "Oct 2023",
+    "description": "As %%leadership%% and fullstack developer, I led teams on projects using %%typescript%%, %%nodejs%%, %%react%%, %%nextjs%%, %%tailwindcss%%, %%sass%% %%redux%%, %%expressjs%%, and %%postgresql%%. I maintained a focus on staying updated with tools and led innovative solutions. I participated in design review and contributed ideas with %%figma%%.",
+    "skills": [
+        "leadership",
+        "typescript",
+        "nodejs",
+        "react",
+        "nextjs",
+        "expressjs",
+        "postgresql",
+        "tailwindcss",
+        "redux",
+        "figma"
+    ]
+  },
+  {
+    "position": "Frontend Developer",
+    "name": "CreESI",
+    "url": "https://www.cresi.com.ar/",
+    "startDate": "Jul 2022",
+    "endDate": "Oct 2022",
+    "description": "As frontend developer at CrESI, I led the creation of innovative digital experiences using %%vue%% %%tailwindcss%% %%sass%% on the front end, %%expressjs%% to communicate with the backend, and %%postgresql%% and %%firebase%% as the database. I implemented %%typescript%%, %%nodejs%%, and %%redux%% to ensure robust and scalable development, benefiting over 15,000 students in Argentina and other Latin American countries.",
+    "skills": [
+        "vue",
+        "expressjs",
+        "postgresql",
+        "firebase",
+        "typescript",
+        "nodejs",
+        "redux",
+        "postgresql",
+        "tailwindcss"
+    ]
+  },
+    {
+      "position": "Freelance",
+      "name": "Fiver / Upwork / Workana",
+      "startDate": "Aug 2021",
+      "endDate": "Jul 2022",
+      "description": "%%nodejs%% %%typescript%% ",
+      "skills": [
+        "nodejs",
+        "typescript",
+        "leadership",
+        "figma",
+        "tailwindcss",
+        "react",
+        "vue",
+        "css",
+        "sass"
+      ]
+    }
+  
+  ]
+  

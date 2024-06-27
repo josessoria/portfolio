@@ -1,0 +1,80 @@
+{
+  "name": "josesoria.com.ar",
+  "private": true,
+  "description": "Jose soria personal website",
+  "version": "0.1.0",
+  "author": {
+    "email": "josesoriap21@gmail.com",
+    "name": "Jose Soria",
+    "url": "https://josesoria.com.ar"
+  },
+  "dependencies": {
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "classnames": "^2.3.1",
+    "dayjs": "^1.11.4",
+    "dotenv": "^16.0.1",
+    "fast-average-color-node": "^2.4.0",
+    "gatsby": "^5.12.12",
+    "gatsby-plugin-google-analytics": "^5.12.0",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.12.3",
+    "gatsby-plugin-offline": "^6.12.3",
+    "gatsby-plugin-react-helmet": "^6.12.0",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-sass": "^6.12.3",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-typescript": "^5.12.1",
+    "gatsby-source-filesystem": "^5.12.1",
+    "gatsby-source-rss-feed": "^1.2.2",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.6",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-grid-gallery": "^0.5.5",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^5.2.1",
+    "react-markdown": "^8.0.3",
+    "react-to-print": "^2.14.7",
+    "react-vertical-timeline-component": "^3.6.0",
+    "sass": "^1.54.3"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/react-helmet": "^6.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-starter-default",
+    "alexandrtovmach"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandrtovmach/alexandrtovmach.com"
+  },
+  "bugs": {
+    "url": "https://github.com/alexandrtovmach/alexandrtovmach.com/issues"
+  }
+}

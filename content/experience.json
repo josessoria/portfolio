@@ -1,0 +1,84 @@
+[
+  {
+    "position": "Project Leader / Director de sistemas",
+    "name": "DreamJunkStudio.com",
+    "url": "https://dreamjunkstudios.com/",
+    "startDate": "Oct 2023",
+    "description": "Lideré la ejecución de siete proyectos con metodologías %%scrum%% con %%git%%, %%trello%% y %%notion%%, coordinando equipos siendo %%leadership%%, %%mentorship%% y contribuyendo al desarrollo con %%nextjs%% %%tailwindcss%% %%redux%% y %%react%% en el frontend, y %%expressjs%%, %%postgresql%% %%typescript%% en el backend. Además, guié en el uso de %%aws%%. Revisé y aporté ideas de diseño con %%figma%% para una experiencia de usuario excepcional.",
+    "skills": [
+      "scrum",
+      "git",
+      "trello",
+      "notion",
+      "leadership",
+      "mentorship",
+      "nextjs",
+      "tailwindcss",
+      "redux",
+      "react",
+      "expressjs",
+      "postgresql",
+      "typescript",
+      "aws",
+      "figma"
+    ]
+  },
+  {
+    "position": "Fullstack Developer",
+    "name": "DreamJunkStudios.com",
+    "url": "https://DreamJunkStudios.com/",
+    "startDate": "Sep 2022",
+    "endDate": "Oct 2023",
+    "description": "Como %%leadership%% y desarrollador fullstack, lideré equipos en proyectos utilizando %%typescript%%, %%nodejs%%, %%react%%, %%nextjs%%, %%tailwindcss%%, %%sass%% %%redux%%, %%expressjs%%,%%mongodb%% %%firebase%% %%postgresql%%. Mantuve un enfoque actualizado en herramientas y lideré soluciones innovadoras. Participé en revisión de diseño y aporté ideas con %%figma%%.  ",
+    "skills": [
+      "leadership",
+      "typescript",
+      "nodejs",
+      "react",
+      "nextjs",
+      "expressjs",
+      "postgresql",
+      "tailwindcss",
+      "redux",
+      "figma"
+    ]
+  },
+  {
+    "position": "Frontend Developer",
+    "name": "CrESI.com.ar",
+    "url": "https://www.cresi.com.ar/",
+    "startDate": "Jul 2022",
+    "endDate": "Oct 2022",
+    "description": "Como desarrollador frontend en CrESI, lideré la creación de experiencias digitales innovadoras utilizando %%vue%% %%tailwindcss%% %%sass%% en el front, %%expressjs%% para comunicarme con el backend, y %%postgresql%% y %%firebase%% como base de datos. Implementé %%typescript%%, %%nodejs%% y %%redux%% para garantizar un desarrollo robusto y escalable, beneficiando a más de 15.000 estudiantes en Argentina y otros países latinoamericanos.",
+    "skills": [
+      "vue",
+      "expressjs",
+      "postgresql",
+      "firebase",
+      "typescript",
+      "nodejs",
+      "redux",
+      "postgresql",
+      "tailwindcss"
+    ]
+  },
+  {
+    "position": "Frontend developer",
+    "name": "Fiver / Upwork / Workana",
+    "startDate": "Aug 2021",
+    "endDate": "Jul 2022",
+    "description": "%%nodejs%% %%typescript%% ",
+    "skills": [
+      "nodejs",
+      "typescript",
+      "leadership",
+      "figma",
+      "tailwindcss",
+      "react",
+      "vue",
+      "css",
+      "sass"
+    ]
+  }
+
+]
