@@ -185,6 +185,25 @@
   .divimg {
     height: 500px;
   }
+
+  .titleportfoil{
+    h1{
+      font-size: 100px;
+    }
+    span{
+      font-size: 20px;
+    }
+  }
+
+  .infosection{
+    span{
+      font-size: 30px;
+    }
+  }
+
+  .skillsitemmid{
+    font-size: 22px !important;
+  }
 }
 
 @media (max-width: 1240px) {
