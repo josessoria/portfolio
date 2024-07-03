@@ -38,10 +38,10 @@ const SEO = ({ description, lang, title, previewImageSrc }: Props) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="alexandrtovmach.com" />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:site_name" content="josesoria.com.ar" />
+      <meta property="og:locale" content="en_ES" />
       <meta property="article:author" content={title} />
-      <meta property="og:image" content={`https://alexandrtovmach.com${previewImageSrc || PreviewImageSrc}`} />
+
 
       {/* twitter */}
       <meta name="twitter:card" content="summary" />
@@ -49,12 +49,12 @@ const SEO = ({ description, lang, title, previewImageSrc }: Props) => {
       <meta name="twitter:site" content={site.siteMetadata.author} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:image" content={`https://alexandrtovmach.com${previewImageSrc || PreviewImageSrc}`} />
+
 
       {/* personal meta */}
-      <link rel="me" href="https://alexandrtovmach.com/" type="text/html" />
-      <link rel="me" href="mailto:alexandrtovmach@gmail.com" />
-      <link rel="me" href="sms:+380961709568" />
+      <link rel="me" href="https://josesoria.com.ar/" type="text/html" />
+      <link rel="me" href="mailto:josesoriap21@gmai.com" />
+      <link rel="me" href="sms:+5493816100078" />
     </Helmet>
   );
 };

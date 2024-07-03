@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   siteMetadata: {
     title: `José soria`,
-    description: `Full stack engineer and UI/UX designer. I build software for startups and big companies with focus on eye-catching design, usability, a11y and web optimization.`,
+    description: `Full stack engineer. I build software for startups and big companies with focus on eye-catching design, usability, a3y and web optimization.`,
     author: `@josessoria`,
   },
   plugins: [
