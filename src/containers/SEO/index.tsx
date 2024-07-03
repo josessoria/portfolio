@@ -41,7 +41,7 @@ const SEO = ({ description, lang, title, previewImageSrc }: Props) => {
       <meta property="og:site_name" content="josesoria.com.ar" />
       <meta property="og:locale" content="en_ES" />
       <meta property="article:author" content={title} />
-
+      <meta property="og:image" content={`https://ibb.co/61p4VPk`} />
 
       {/* twitter */}
       <meta name="twitter:card" content="summary" />
@@ -49,12 +49,12 @@ const SEO = ({ description, lang, title, previewImageSrc }: Props) => {
       <meta name="twitter:site" content={site.siteMetadata.author} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-
+      <meta name="twitter:image" content={`https://ibb.co/61p4VPk`} />
 
       {/* personal meta */}
       <link rel="me" href="https://josesoria.com.ar/" type="text/html" />
-      <link rel="me" href="mailto:josesoriap21@gmai.com" />
-      <link rel="me" href="sms:+5493816100078" />
+      <link rel="me" href="mailto:josesoriap21@gmail.com" />
+      <link rel="me" href="sms:+544816100078" />
     </Helmet>
   );
 };
