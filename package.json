@@ -59,7 +59,7 @@
   "keywords": [
     "gatsby",
     "gatsby-starter-default",
-    "alexandrtovmach"
+    "josessoria"
   ],
   "license": "MIT",
   "scripts": {
@@ -73,9 +73,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexandrtovmach/alexandrtovmach.com"
+    "url": "https://github.com/josessoria"
   },
   "bugs": {
-    "url": "https://github.com/alexandrtovmach/alexandrtovmach.com/issues"
+    "url": "https://github.com/josessoria"
   }
 }
