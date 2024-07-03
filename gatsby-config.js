@@ -34,18 +34,24 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `https://medium.com/feed/@josessoria`,
+        url: `https://medium.com/feed/@josesoriap21`,
         name: `Medium`,
       },
     },
-
+    // {
+    //   resolve: `gatsby-source-rss-feed`,
+    //   options: {
+    //     url: `https://habr.com/ru/users/alexandrtovmach/rss/posts`,
+    //     name: `Habr`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
         url: `https://dou.ua/users/aleksandr-tovmach/articles/feed/`,
         name: `DOU`,
         parserOption: {
-          headers: { 'User-Agent': 'josessoria.com' },
+          headers: { 'User-Agent': 'alexandrtovmach.com' },
         },
       },
     },
