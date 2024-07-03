@@ -61,7 +61,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `bookCovers`,
-        path: `${__dirname}/src/assets/images/book-covers`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {

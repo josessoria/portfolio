@@ -1,0 +1,37 @@
+[
+    {
+      "imageSrc": "../../assets/images/carnesmockup.png" ,
+      "altText": "Dream Junk",
+      "title": "Carnes argentinas",
+      "skills": ["Git", "Redux", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laborum impedit eaque tenetur blanditiis cumque, sint architecto suscipit. Est, repellat similique. Quasi ullam unde non quam labore culpa doloremque at!",
+      "links": [
+        {
+          "href": "https://www.google.com.ar/",
+          "text": "Visit"
+        },
+        {
+          "href": "https://www.google.com.ar/",
+          "text": "Github"
+        }
+      ]
+    },
+    {
+      "imageSrc": "../../assets/images/carnesmockup.png",
+      "altText": "Dream Junk",
+      "title": "Carnes argentinas",
+      "skills": ["Git", "Redux", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laborum impedit eaque tenetur blanditiis cumque, sint architecto suscipit. Est, repellat similique. Quasi ullam unde non quam labore culpa doloremque at!",
+      "links": [
+        {
+          "href": "https://www.google.com.ar/",
+          "text": "Visit"
+        },
+        {
+          "href": "https://www.google.com.ar/",
+          "text": "Github"
+        }
+      ]
+    }
+  ]
+  

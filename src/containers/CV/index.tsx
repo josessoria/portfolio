@@ -175,23 +175,7 @@ const CVPaper = () => {
                 nuevas tecnologías&nbsp;
               </p>
             </article>
-            <article>
-              <h3 className="section-title">Ambitions</h3>
-              <p className="text">
-                No tenía ni 14 años cuando y aquería formar una&nbsp;
-                <span className="highlighted">empresa</span>&nbsp; organizar,
-                expandir y&nbsp;
-                <span className="highlighted">
-                  ver crecer mi emprendimiento
-                </span>
-                , me gusta la idea de &nbsp;
-                <span className="highlighted">generar dinero</span>, y me gusta
-                la manera de llegar a el.&nbsp;
-                <span className="highlighted">También</span>, me gustaría poder
-                enseñar como lo hice y como hacerlo, el hecho de enseñar siempre
-                fue mi pasion
-              </p>
-            </article>
+
           </section>
           <section className={styles.mainInfoRight}>
             <article>

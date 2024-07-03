@@ -1,14 +1,11 @@
-
-
 .home {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 50px;
-
 }
 
-.headhome{
+.headhome {
   background: #6f00ff;
   width: 100%;
   height: 70vh;
@@ -16,34 +13,32 @@
   align-items: end;
   justify-content: space-between;
   padding: 50px;
-
-
 }
 
-.titleportfoil{
+.titleportfoil {
   display: flex;
   flex-direction: column;
   align-items: start;
 
-  h1{
+  h1 {
     font-size: 150px;
     font-weight: 600;
     color: white;
   }
 
-  span{
+  span {
     font-size: 30px;
     color: white;
   }
 }
 
-.printbutton{
+.printbutton {
   background-color: transparent;
   border: 1px solid white;
   border-radius: calc(var(--space) * 2);
   color: white;
   display: flex;
-  padding:5px 15px;
+  padding: 5px 15px;
   cursor: pointer;
   opacity: 0.8;
   transition: 0.4s;
@@ -87,14 +82,14 @@
   }
 }
 
-.headhome{
-  a{
+.headhome {
+  a {
     border-bottom: none;
     text-decoration: none;
   }
 }
 
-.infosection{
+.infosection {
   padding: 0 50px;
   width: 100%;
   min-height: 60vh;
@@ -108,14 +103,11 @@
   width: 48%;
   display: flex;
   flex-direction: column;
-  height: 490px;
+  height: 540px;
   background-color: white;
-
-
-
 }
 
-.infoimgstyles{
+.infoimgstyles {
   padding: 10px;
   width: 100%;
 
@@ -123,12 +115,12 @@
   flex-direction: column;
   gap: 5px;
 
-  a{
+  a {
     border-bottom: none;
   }
 }
 
-.titleimginfo{
+.titleimginfo {
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -142,10 +134,9 @@
   width: 100%;
   max-width: 1600px;
   flex-wrap: wrap;
-
 }
 
-.divimg{
+.divimg {
   border-radius: 10px;
 }
 
@@ -153,7 +144,38 @@
   width: 100%;
   height: 100%;
   object-fit: cover; /* Esto evita que la imagen se corte */
- 
+}
+
+.buttonaction {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  gap: 4px;
+
+  span {
+    padding: 1px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+}
+.disabledbutton {
+  background-color: rgb(190, 190, 190) !important;
+  cursor: not-allowed !important;
+}
+
+.skillsmid {
+  width: 100%;
+  max-width: 1170px;
+  gap: 15px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap !important;
+  margin: 0 auto;
+}
+
+.skillsitemmid {
+  font-size: 25px !important;
 }
 
 @media (max-width: 1600px) {
@@ -161,7 +183,7 @@
     max-width: 1200px;
   }
   .divimg {
-    height: 370px;
+    height: 500px;
   }
 }
 
@@ -172,6 +194,21 @@
   .divimg {
     height: 310px;
   }
+
+  .infosection {
+    span {
+      font-size: 35px;
+    }
+  }
+
+  .titleportfoil {
+    h1 {
+      font-size: 60px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -179,6 +216,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
   }
   .divimg {
     width: 100%;
@@ -187,19 +225,63 @@
   }
 }
 
-@media (max-width: 600px){
-  .divimg {
+@media (max-width: 1000px) {
+  .headhome {
+    flex-direction: column;
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .titleportfoil {
     width: 100%;
-    height: 350px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
-    max-height: 500px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .skillitemdiv{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 600px) {
   .divimg {
     width: 100%;
-    height: 260px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
-    max-height: 500px;
+    height: 450px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
+
+  }
+  .skillsitemmid {
+    font-size: 15px !important;
+  }
+
+  .skillsmid{
+    padding: 0 50px;
+    gap: 10px;
+  }
+
+  .headhome {
+    padding: 50px 10px;
+  }
+
+  .navbar {
+    padding: 0 50px;
+  }
+
+  .infosection {
+    span {
+      font-size: 20px;
+    }
   }
 }
 
+@media (max-width: 480px) {
+  .divimg {
+    width: 100%;
+    height: 420px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
+
+  }
+
+}

@@ -1,0 +1,27 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  padding: 30px 60px;
+  z-index: 999;
+
+  h1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.menuder {
+  svg {
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 40px 20px;
+  }
+}
