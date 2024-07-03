@@ -186,23 +186,28 @@
     height: 500px;
   }
 
-  .titleportfoil{
-    h1{
+  .titleportfoil {
+    h1 {
       font-size: 100px !important;
     }
-    span{
+    span {
       font-size: 20px !important;
     }
   }
 
-  .infosection{
-    span{
+  .infosection {
+    span {
       font-size: 30px !important;
     }
   }
 
-  .skillsitemmid{
+  .skillsitemmid {
     font-size: 22px !important;
+  }
+
+  .skillitemdiv {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -259,24 +264,18 @@
     text-align: center;
     align-items: center;
   }
-
-  .skillitemdiv{
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 600px) {
   .divimg {
     width: 100%;
     height: 450px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
-
   }
   .skillsitemmid {
     font-size: 15px !important;
   }
 
-  .skillsmid{
+  .skillsmid {
     padding: 0 50px;
     gap: 10px;
   }
@@ -300,7 +299,5 @@
   .divimg {
     width: 100%;
     height: 420px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
-
   }
-
 }
