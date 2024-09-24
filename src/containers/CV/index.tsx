@@ -23,6 +23,7 @@ import experience from '../../../content/experience.json';
 import skills from '../../../content/skills.json';
 
 import * as styles from './cv.module.scss';
+import { MdOutlineWebAsset } from 'react-icons/md';
 
 const CVPaper = () => {
   const [highlightedSkillKey, onChangeHighlightedSkillKey] = useState<
@@ -88,6 +89,13 @@ const CVPaper = () => {
                 label: 'josesoriap21@gmail.com',
                 title: 'Email address',
                 icon: <MailSVG />,
+              },
+              {
+                link: 'https://portfoliojosesoria-git-main-josessorias-projects.vercel.app/',
+                label:
+                  'portfoliojosesoria-git-main-josessorias-projects.vercel.app',
+                title: 'Portafolio',
+                icon: <MdOutlineWebAsset />,
               },
               {
                 link: 'https://www.linkedin.com/in/josessoria/',
@@ -175,7 +183,6 @@ const CVPaper = () => {
                 nuevas tecnologías&nbsp;
               </p>
             </article>
-
           </section>
           <section className={styles.mainInfoRight}>
             <article>
@@ -191,12 +198,11 @@ const CVPaper = () => {
                 </div>
               ))}
             </article>
-             <article>
+            <article>
               <h3 className="section-title ">Education</h3>
               <div className={styles.educationItem}>
-
-                  <h4 className="label">Autodidacta</h4>
-                  <p className="text">2020 - Present</p>
+                <h4 className="label">Autodidacta</h4>
+                <p className="text">2020 - Present</p>
 
                 <h4 className="label">Soy Henry</h4>
                 <p className="text">Abr 2022 - Sep 2022</p>
@@ -205,7 +211,7 @@ const CVPaper = () => {
                 <h4 className="label">CoderHouse</h4>
                 <p className="text">Mar 2022 - Abr 2022</p>
               </div>
-            </article> 
+            </article>
           </section>
         </section>
       </main>
