@@ -13,10 +13,263 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import estudio from '../../assets/images/estudio.png';
+import gestini from '../../assets/images/gestini.webp';
+import carnesmockup from '../../assets/images/carnesmockup.png';
+import academy from '../../assets/images/academy.png';
+import dreamavant from '../../assets/images/dreamjunk (2).png';
+import gestinilanding from '../../assets/images/gestinilanding.webp';
+import lootieverse from '../../assets/images/lootieverse.png';
+import explorador from '../../assets/images/explorador.png';
+import naka from '../../assets/images/naka.png';
+import aivision from '../../assets/images/aivision.png';
+import astrax from '../../assets/images/astrax.png';
+import cresi from '../../assets/images/cresi.jpeg';
+import henryshop from '../../assets/images/henryshop.jpeg';
+import cyt from '../../assets/images/cyt.png';
+import portfoilold from '../../assets/images/portfoilold.png';
 
 import * as styles from './home.module.scss';
 
 const Home: React.FunctionComponent = () => {
+  const projects = [
+    {
+      title: 'Gestini Software ERP',
+      image: gestini,
+      category: 'fullstack',
+      alt: 'Dream Junk',
+      skills: [
+        'React',
+        'Java Spring Boot',
+        'SASS',
+        'Nestjs',
+        'FastAPI',
+        'Rest Api',
+        'Electron',
+        'MYSQL',
+        'DIGITAL OCEAN',
+        'Redux toolkit',
+      ],
+      description:
+        'Plataforma fullstack masiva de manejo de stocks, productos, clientes, proveedores, carga de documentos, carga de productos masivo, servicios en la nube, integraciones y aplicaciones propias, afip, inteligencia artificial, recursos humanos, multiples sucursales, y mucho mas',
+      links: {
+        visit: 'https://www.gestini.com/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Dream Junk Studios ERP',
+      image: estudio,
+      category: 'fullstack',
+      alt: 'Dream Junk',
+      skills: [
+        'React',
+        'Node',
+        'Express',
+        'Express',
+        'Mongodb',
+        'sass',
+        'Rest Api',
+        'Redux toolkit',
+      ],
+      description:
+        'Plataforma privada para la gestión de empresas y proyectos, con red social interna para empleados, seguimiento de proyectos y tareas, horarios del personal, múltiples empresas y sucursales, chat interno y gestión de perfiles.',
+      links: {
+        visit: '#',
+        github: '#',
+      },
+    },
+    {
+      title: 'Carnes Argentinas',
+      image: carnesmockup,
+      category: 'frontend',
+      alt: 'Carnes Argentinas',
+      skills: ['Tailwindcss', 'Redux', 'React'],
+      description:
+        'E-commerce especializado en la venta de productos y servicios que reflejan la rica cultura, tradiciones y temática argentina.',
+      links: {
+        visit: 'https://elargentino.netlify.app/home',
+        github: 'https://github.com/josessoria/ElArgentinoEcommerce',
+      },
+    },
+    {
+      title: 'Dream Junk Academy',
+      image: academy,
+      category: 'fullstack',
+      alt: 'Dream Junk',
+      skills: [
+        'Nodejs',
+        'Express',
+        'Redux',
+        'React',
+        'Mongodb',
+        'Nextjs14',
+        'Rest Api',
+      ],
+      description:
+        'Portafolio de Dream Junk integrado con base de datos, ofreciendo funcionalidades completas de inicio de sesión y registro de usuarios para una experiencia personalizada y segura.',
+      links: {
+        visit: '#',
+        github: '#',
+      },
+    },
+    {
+      title: 'Dream Avant Garde',
+      image: dreamavant,
+      category: 'fullstack',
+      alt: 'Dream Avant Garde',
+      skills: [
+        'Nodejs',
+        'Express',
+        'Redux',
+        'React',
+        'Mongodb',
+        'Nextjs14',
+        'Rest Api',
+      ],
+      description:
+        'El portafolio de Dream Avant Garde es una plataforma con base de datos que ofrece inicio de sesión y registro de usuarios para una experiencia segura, traducción multilingüe, integración con blockchain para autenticidad, notificaciones sobre actualizaciones y un sistema de afiliados que otorga beneficios por referir nuevos usuarios.',
+      links: {
+        visit: 'https://www.dreamjunkstudios.com/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Gestini Landing Page',
+      image: gestinilanding,
+      category: 'frontend',
+      alt: 'Gestini Landing Page',
+      skills: ['Nextui', 'Vite', 'React', 'Mongodb'],
+      description:
+        'El objetivo de este proyecto es desarrollar una landing page para Gestini, diseñada para captar el interés de los usuarios y permitirles suscribirse a un newsletter. Esta página servirá como un canal de comunicación para mantener informados a los visitantes sobre el progreso del desarrollo de la aplicación y su disponibilidad para su uso.',
+      links: {
+        visit: 'https://gestini.com/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Lootieverse',
+      image: lootieverse,
+      category: 'frontend',
+      alt: 'lootieverse',
+      skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss', 'mongodb'],
+      description:
+        'Página "Coming Soon" diseñada para la plataforma de Lootieverse, y con un newsletter conectado a mongodb, destacando un emocionante contador regresivo que genera expectativa antes del lanzamiento.',
+      links: {
+        visit: 'https://lootieverse-production.up.railway.app/',
+        github: '#',
+      },
+    },
+    {
+      title: 'AIvision',
+      image: aivision,
+      alt: 'aivision',
+      category: 'frontend',
+      skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss', 'mongodb'],
+      description:
+        'Página "Coming Soon" diseñada para la plataforma de Aivision, y con un newsletter conectado a mongodb, destacando un emocionante contador regresivo que genera expectativa antes del lanzamiento.',
+      links: {
+        visit: 'https://coming-soon-aivision-production.up.railway.app/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Explorador',
+      image: explorador,
+      alt: 'Explorador',
+      category: 'frontend',
+      skills: [
+        'React',
+        'sass',
+        'tailwindcss',
+        'nextjs',
+        'html',
+        'Others frameworks',
+      ],
+      description:
+        'Página "Coming Soon" diseñada para la plataforma de Explorador, y con un newsletter conectado a mongodb, destacando un emocionante contador regresivo que genera expectativa antes del lanzamiento.',
+      links: {
+        visit: 'https://exploradorcoming-production.up.railway.app/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Naka',
+      image: naka,
+      alt: 'Merlokit',
+      category: 'frontend',
+      skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss', 'mongodb'],
+      description:
+        'Página "Coming Soon" diseñada para la plataforma de Naka, y con un newsletter conectado a mongodb, destacando un emocionante contador regresivo que genera expectativa antes del lanzamiento.',
+      links: {
+        visit: 'https://nakacoming-production.up.railway.app/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Astrax',
+      image: astrax,
+      alt: 'astrax',
+      category: 'frontend',
+      skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss'],
+      description:
+        'El portafolio del equipo de trabajo de software presenta proyectos destacados, mostrando habilidades en desarrollo, diseño y gestión. Incluye secciones para la descripción de cada proyecto, funcionalidades implementadas, tecnologías utilizadas y resultados alcanzados, proporcionando una visión clara de la experiencia y capacidades del equipo.',
+      links: {
+        visit: 'https://astraxs.com/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Cresi',
+      image: cresi,
+      alt: 'cresi',
+      category: 'fullstack',
+      skills: ['VUE', 'SASS', 'mongodb'],
+      description:
+        'La plataforma académica, desarrollada con VUE, SASS y MongoDB, integra juegos en la aplicación para ofrecer una educación eficiente y divertida. Esta solución innovadora busca mejorar el aprendizaje a través de interactividad y entretenimiento.',
+      links: {
+        visit: 'https://www.cresi.com.ar/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Mi portafolio antiguo',
+      image: portfoilold,
+      category: 'frontend',
+      alt: 'portfoilold',
+      skills: ['react'],
+      description: 'Mi portafolio antiguo que tiene proyectos viejos',
+      links: {
+        visit: 'https://josesoria.netlify.app/#/',
+        github: '#',
+      },
+    },
+    {
+      title: 'Henry Shop',
+      image: henryshop,
+      category: 'fullstack',
+      alt: 'henryshop',
+      skills: ['react, restAPI'],
+      description: 'Proyecto realizado en el bootcamp de soyhenry',
+      links: {
+        visit: '#',
+        github: '#',
+      },
+    },
+    {
+      title: 'Ecommerce',
+      image: cyt,
+      category: 'fullstack',
+      alt: 'cyt',
+      skills: ['react, Nodejs, Mongodb, restAPI, redux toolkit'],
+      description:
+        'Aplicacion fullstack con sistema de logeo y registro, dashboard administracion, creacion, edicion de productos y categoria, sistema de roles',
+      links: {
+        visit: 'https://cyt-express-react.vercel.app/',
+        github: 'https://github.com/josessoria/CYT-EXPRESS-REACT',
+      },
+    },
+  ];
   return (
     <main className={styles.home}>
       <div className={styles.headhome}>
@@ -304,321 +557,62 @@ const Home: React.FunctionComponent = () => {
           Trabajos
         </h2>
         <div className={styles.gridimage} style={{}}>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/Productsock.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>
-                  Gestion empresarial
-                </p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">Java Spring Boot</span>
-                <span className="skill-item ">React</span>
-                <span className="skill-item ">Next14</span>
-                <span className="skill-item ">Tailwindcss</span>
-                <span className="skill-item ">Redux Toolkit</span>
-                <span className="skill-item ">Electronjs</span>
-                <span className="skill-item ">AWS</span>
-                <span className="skill-item ">MYSQL</span>
-                <span className="skill-item ">Rest Api</span>
-              </div>
-              <div className="description item">
-                Software web y de escritorio de gestion de inventarios y
-                facturacion para empresas medianas y grandes, con base de datos
-                en la nube, y sistema de multimple empresas y sucursales
-              </div>
-              <div className={styles.buttonaction}>
-                <a href="#">
-                  <span className={styles.disabledbutton}>Visit </span>
-                </a>
+          {projects.map((project, index) => (
+            <div className={styles.divimg} key={index}>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="image"
+                style={{ width: '100%', height: '300px', objectFit: 'contain' }}
+              />
 
-                <a href="#">
-                  <span className={styles.disabledbutton}>Github</span>
-                </a>
+              <div className={styles.infoimgstyles}>
+                <div className="topinfo">
+                  {' '}
+                  <div className={styles.titleimginfo}>
+                    <p style={{ fontWeight: '600', fontSize: '20px' }}>
+                      {project.title}
+                    </p>
+                  </div>
+                  <div className={styles.skillitemdiv}>
+                    {project.skills.map((skill, i) => (
+                      <span className="skill-item" key={i}>
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="description item">{project.description}</div>
+                <div className={styles.buttonaction}>
+                  <a
+                    href={project.links.visit}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={
+                      project.links.visit === '#'
+                        ? styles.disabledbutton
+                        : styles.activebutton
+                    }
+                  >
+                    <span>Visit</span>
+                  </a>
+                  <a
+                    href={project.links.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={
+                      project.links.github === '#'
+                        ? styles.disabledbutton
+                        : styles.activebutton
+                    }
+                  >
+                    <span>Github</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/estudio.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>
-                  Dream Junk Studios
-                </p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">React</span>
-                <span className="skill-item ">Node</span>
-                <span className="skill-item ">Express</span>
-                <span className="skill-item ">Express</span>
-                <span className="skill-item ">Mongodb</span>
-                <span className="skill-item ">sass</span>
-                <span className="skill-item ">Rest Api</span>
-              </div>
-              <div className="description item">
-                Plataforma privada para la gestión de empresas y proyectos, con
-                red social interna para empleados, seguimiento de proyectos y
-                tareas, horarios del personal, múltiples empresas y sucursales,
-                chat interno y gestión de perfiles.
-              </div>
-              <div className={styles.buttonaction}>
-                <a href="#" target="blank_">
-                  <span className={styles.disabledbutton}>Visit </span>
-                </a>
-
-                <a href="#" target="blank_">
-                  <span className={styles.disabledbutton}>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/carnesmockup.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>
-                  Carnes argentinas
-                </p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">Tailwindcss</span>
-                <span className="skill-item ">Redux</span>
-                <span className="skill-item ">React</span>
-              </div>
-
-              <div className="description item">
-                E-commerce especializado en la venta de productos y servicios
-                que reflejan la rica cultura, tradiciones y temática argentina.
-              </div>
-              <div className={styles.buttonaction}>
-                <a href="https://elargentino.netlify.app/home" target="blank_">
-                  <span>Visit </span>
-                </a>
-
-                <a
-                  href="https://github.com/josessoria/ElArgentinoEcommerce"
-                  target="blank_"
-                >
-                  <span>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/Dream.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>
-                  Dream Junk Studios
-                </p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">Nodejs</span>
-                <span className="skill-item ">Express</span>
-                <span className="skill-item ">Redux</span>
-                <span className="skill-item ">React</span>
-                <span className="skill-item ">Mongodb</span>
-                <span className="skill-item ">Nextjs14</span>
-                <span className="skill-item ">Rest Api</span>
-              </div>
-              <div className="description item">
-                Portafolio de Dream Junk integrado con base de datos, ofreciendo
-                funcionalidades completas de inicio de sesión y registro de
-                usuarios para una experiencia personalizada y segura.
-              </div>
-              <div className={styles.buttonaction}>
-                <a
-                  href="https://portafolio2-production-0416.up.railway.app/"
-                  target="blank_"
-                >
-                  <span>Visit </span>
-                </a>
-
-                <a href="#">
-                  <span className={styles.disabledbutton}>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/AIVISION.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>AIVISION</p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">React</span>
-                <span className="skill-item ">Nextjs14</span>
-                <span className="skill-item ">SASS</span>
-                <span className="skill-item ">tailwindcss</span>
-                <span className="skill-item ">Nextjs14</span>
-              </div>
-
-              <div className="description item">
-                Página "Coming Soon" diseñada para la plataforma de Aivision,
-                destacando un emocionante contador regresivo que genera
-                expectativa antes del lanzamiento.
-              </div>
-              <div className={styles.buttonaction}>
-                <a
-                  href="https://aivision-coming-soon-production.up.railway.app/"
-                  target="blank_"
-                >
-                  <span>Visit </span>
-                </a>
-
-                <a href="#">
-                  <span className={styles.disabledbutton}>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/academy.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>
-                  Dream Junk Academy
-                </p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">React</span>
-                <span className="skill-item ">sass</span>
-                <span className="skill-item ">tailwindcss</span>
-                <span className="skill-item ">Nextjs14</span>
-              </div>
-
-              <div className="description item">
-                Página web diseñada y desarrollada exclusivamente para Dream
-                Junk Academy, ofreciendo una experiencia digital única que
-                refleja su misión y valores.
-              </div>
-              <div className={styles.buttonaction}>
-                <a href="https://beta.dreamjunkacademy.com/" target="blank_">
-                  <span>Visit </span>
-                </a>
-
-                <a href="#">
-                  <span className={styles.disabledbutton}>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/portfoilold.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>
-                  Portafolio antiguo
-                </p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">React</span>
-                <span className="skill-item ">sass</span>
-                <span className="skill-item ">html</span>
-                <span className="skill-item ">Others frameworks</span>
-              </div>
-
-              <div className="description item">
-                Mi anterior portafolio de desarrollador, destacando por su
-                integración de múltiples animaciones y efectos visuales.
-              </div>
-              <div className={styles.buttonaction}>
-                <a href="https://josesoria.netlify.app/#/" target="blank_">
-                  <span>Visit </span>
-                </a>
-
-                <a href="#">
-                  <span className={styles.disabledbutton}>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.divimg}>
-            <StaticImage
-              src={'../../assets/images/merlok.png'}
-              alt={'Dream Junk'}
-              layout="fixed" // Ajusta el layout (fixed, intrinsic, fill)
-              className="image" // Clase CSS para la imagen
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }} // Estilo CSS para la imagen
-            />
-            <div className={styles.infoimgstyles}>
-              <div className={styles.titleimginfo}>
-                {' '}
-                <p style={{ fontWeight: '600', fontSize: '20px' }}>Merlokit</p>
-              </div>
-              <div className={styles.skillitemdiv}>
-                <span className="skill-item ">React</span>
-                <span className="skill-item ">Next14</span>
-                <span className="skill-item ">Others frameworks</span>
-              </div>
-
-              <div className="description item">
-                Página web desarrollada para el cliente Merlokit, completamente
-                responsive y funcional. Incluye sliders dinámicos y una sección
-                de contacto para facilitar la comunicación.
-              </div>
-              <div className={styles.buttonaction}>
-                <a href="https://www.merlok.com.ar/" target="blank_">
-                  <span>Visit </span>
-                </a>
-
-                <a href="#">
-                  <span className={styles.disabledbutton}>Github</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </main>

@@ -10,5 +10,8 @@
     "name": "Jose Soria",
     "url": "https://josesoria.com.ar"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "multiplex-cinema-story": "file:"
+  }
 }

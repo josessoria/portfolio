@@ -103,14 +103,17 @@
   width: 48%;
   display: flex;
   flex-direction: column;
-  height: 540px;
   background-color: white;
+  height: auto;
+  // height: 300px; /* Establece una altura fija para el contenedor */
 }
 
 .infoimgstyles {
   padding: 10px;
   width: 100%;
-
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-direction: column;
   gap: 5px;
@@ -127,23 +130,35 @@
 }
 
 .gridimage {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 16px;
-  width: 100%;
-  max-width: 1600px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(450px, 1fr)
+  ); /* Mínimo de 250px por columna */
+  gap: 16px; /* Espaciado entre las imágenes */
+  padding: 16px; /* Espaciado interno */
 }
 
 .divimg {
-  border-radius: 10px;
+  width: 100% !important;
+  background-color: #fff; /* Color de fondo opcional */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  overflow: hidden; /* Esconde el desbordamiento */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
-.divimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Esto evita que la imagen se corte */
+.image {
+  width: 100%; /* Asegura que la imagen ocupa el 100% del contenedor */
+  height: 200px; /* Establece una altura fija para todas las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+}
+
+.skill-item {
+  display: inline-block;
+  margin-right: 8px; /* Espaciado entre las habilidades */
+  padding: 4px 8px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Bordes de habilidad */
+  border-radius: 4px; /* Bordes redondeados */
 }
 
 .buttonaction {
@@ -162,6 +177,12 @@
 .disabledbutton {
   background-color: rgb(190, 190, 190) !important;
   cursor: not-allowed !important;
+  border-radius: 5px;
+
+  span {
+    background-color: rgb(190, 190, 190) !important;
+    border-radius: 5px;
+  }
 }
 
 .skillsmid {
@@ -177,18 +198,21 @@
 .skillsitemmid {
   font-size: 25px !important;
 }
+.skillitemdiv {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @media (max-width: 1600px) {
   .gridimage {
     max-width: 1200px;
   }
   .divimg {
-    height: 500px;
   }
 
   .titleportfoil {
     h1 {
-      font-size: 100px ;
+      font-size: 100px;
     }
     span {
       font-size: 20px;
@@ -197,26 +221,18 @@
 
   .infosection {
     span {
-      font-size: 30px ;
+      font-size: 30px;
     }
   }
 
   .skillsitemmid {
-    font-size: 22px ;
-  }
-
-  .skillitemdiv {
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 1240px) {
   .gridimage {
     max-width: 1000px;
-  }
-  .divimg {
-    height: 310px;
   }
 
   .infosection {
@@ -245,7 +261,7 @@
   .divimg {
     width: 100%;
     height: auto; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
-    max-height: 500px;
+
   }
 }
 
@@ -269,7 +285,6 @@
 @media (max-width: 600px) {
   .divimg {
     width: 100%;
-    height: 450px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
   }
   .skillsitemmid {
     font-size: 15px !important;
@@ -298,6 +313,6 @@
 @media (max-width: 480px) {
   .divimg {
     width: 100%;
-    height: 420px; /* Cambiado a 'auto' para que la altura se ajuste automáticamente */
+
   }
 }

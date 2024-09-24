@@ -1,4 +1,4 @@
-require("dotenv").config();
+require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
@@ -23,9 +23,14 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
         rule: {
           include: /icons/,
         },
