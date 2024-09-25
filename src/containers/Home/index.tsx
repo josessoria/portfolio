@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { OutboundLink, trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import { StaticImage } from 'gatsby-plugin-image';
 import PrinterSVG from '../../assets/icons/printer.svg';
@@ -13,29 +13,17 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import estudio from '../../assets/images/estudio.png';
-import gestini from '../../assets/images/gestini.webp';
-import carnesmockup from '../../assets/images/carnesmockup.png';
-import academy from '../../assets/images/academy.png';
-import dreamavant from '../../assets/images/dreamjunk (2).png';
-import gestinilanding from '../../assets/images/gestinilanding.webp';
-import lootieverse from '../../assets/images/lootieverse.png';
-import explorador from '../../assets/images/explorador.png';
-import naka from '../../assets/images/naka.png';
-import aivision from '../../assets/images/aivision.png';
-import astrax from '../../assets/images/astrax.png';
-import cresi from '../../assets/images/cresi.jpeg';
-import henryshop from '../../assets/images/henryshop.jpeg';
-import cyt from '../../assets/images/cyt.png';
-import portfoilold from '../../assets/images/portfoilold.png';
+
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import * as styles from './home.module.scss';
 
-const Home: React.FunctionComponent = () => {
+const Home: React.FunctionComponent<{ data: any }> = ({ data }: any) => {
+  console.log(data);
   const projects = [
     {
       title: 'Gestini Software ERP',
-      image: gestini,
+      image: getImage(data.gestini) as any, // Fuerza el tipo a any,
       category: 'fullstack',
       alt: 'Dream Junk',
       skills: [
@@ -59,7 +47,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Dream Junk Studios ERP',
-      image: estudio,
+      image: getImage(data.estudio) as any, // Fuerza el tipo a any,
       category: 'fullstack',
       alt: 'Dream Junk',
       skills: [
@@ -81,7 +69,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Carnes Argentinas',
-      image: carnesmockup,
+      image: getImage(data.carnesmockup) as any, // Fuerza el tipo a any,
       category: 'frontend',
       alt: 'Carnes Argentinas',
       skills: ['Tailwindcss', 'Redux', 'React'],
@@ -94,7 +82,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Dream Junk Academy',
-      image: academy,
+      image: getImage(data.academy),
       category: 'fullstack',
       alt: 'Dream Junk',
       skills: [
@@ -115,7 +103,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Dream Avant Garde',
-      image: dreamavant,
+      image: getImage(data.dreamavant) as any, // Fuerza el tipo a any,
       category: 'fullstack',
       alt: 'Dream Avant Garde',
       skills: [
@@ -136,7 +124,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Gestini Landing Page',
-      image: gestinilanding,
+      image: getImage(data.gestinilanding) as any, // Fuerza el tipo a any,
       category: 'frontend',
       alt: 'Gestini Landing Page',
       skills: ['Nextui', 'Vite', 'React', 'Mongodb'],
@@ -149,7 +137,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Lootieverse',
-      image: lootieverse,
+      image: getImage(data.lootieverse) as any, // Fuerza el tipo a any,
       category: 'frontend',
       alt: 'lootieverse',
       skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss', 'mongodb'],
@@ -162,7 +150,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'AIvision',
-      image: aivision,
+      image: getImage(data.aivision) as any, // Fuerza el tipo a any,
       alt: 'aivision',
       category: 'frontend',
       skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss', 'mongodb'],
@@ -175,7 +163,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Explorador',
-      image: explorador,
+      image: getImage(data.explorador) as any, // Fuerza el tipo a any,
       alt: 'Explorador',
       category: 'frontend',
       skills: [
@@ -195,7 +183,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Naka',
-      image: naka,
+      image: getImage(data.naka) as any, // Fuerza el tipo a any,
       alt: 'Merlokit',
       category: 'frontend',
       skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss', 'mongodb'],
@@ -208,7 +196,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Astrax',
-      image: astrax,
+      image: getImage(data.astrax) as any, // Fuerza el tipo a any,
       alt: 'astrax',
       category: 'frontend',
       skills: ['React', 'Nextjs14', 'SASS', 'tailwindcss'],
@@ -221,7 +209,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Cresi',
-      image: cresi,
+      image: getImage(data.cresi) as any, // Fuerza el tipo a any,
       alt: 'cresi',
       category: 'fullstack',
       skills: ['VUE', 'SASS', 'mongodb'],
@@ -234,7 +222,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Mi portafolio antiguo',
-      image: portfoilold,
+      image: getImage(data.portfoilold) as any, // Fuerza el tipo a any,
       category: 'frontend',
       alt: 'portfoilold',
       skills: ['react'],
@@ -246,7 +234,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Henry Shop',
-      image: henryshop,
+      image: getImage(data.henryshop) as any, // Fuerza el tipo a any,
       category: 'fullstack',
       alt: 'henryshop',
       skills: ['react, restAPI'],
@@ -258,7 +246,7 @@ const Home: React.FunctionComponent = () => {
     },
     {
       title: 'Ecommerce',
-      image: cyt,
+      image: getImage(data.cyt) as any, // Fuerza el tipo a any,
       category: 'fullstack',
       alt: 'cyt',
       skills: ['react, Nodejs, Mongodb, restAPI, redux toolkit'],
@@ -270,6 +258,7 @@ const Home: React.FunctionComponent = () => {
       },
     },
   ];
+
   return (
     <main className={styles.home}>
       <div className={styles.headhome}>
@@ -559,9 +548,9 @@ const Home: React.FunctionComponent = () => {
         <div className={styles.gridimage} style={{}}>
           {projects.map((project, index) => (
             <div className={styles.divimg} key={index}>
-              <img
-                src={project.image}
-                alt={project.title}
+              <GatsbyImage
+                image={project.image} // Usamos GatsbyImage para mostrar la imagen
+                alt={project.alt} // Asegúrate de que el alt sea correcto
                 className="image"
                 style={{ width: '100%', height: '300px', objectFit: 'contain' }}
               />

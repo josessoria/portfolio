@@ -14,20 +14,16 @@ module.exports = {
         coversFolderPath: 'src/assets/images/book-covers',
       },
     },
-    // {
-    //   resolve: `multiplex-cinema-history`,
-    //   options: {
-    //     token: process.env.MULTIPLEX_TOKEN,
-    //   },
-    // },
+
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
 
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
-
         rule: {
           include: /icons/,
         },
@@ -40,13 +36,15 @@ module.exports = {
         name: `Medium`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-rss-feed`,
-    //   options: {
-    //     url: `https://habr.com/ru/users/alexandrtovmach/rss/posts`,
-    //     name: `Habr`,
-    //   },
-    // },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images/`, // Asegúrate de que esta ruta sea correcta
+      },
+    },
+
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
